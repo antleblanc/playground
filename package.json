@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "build": "vuepress build docs",
-    "dev": "vuepress dev docs"
+    "dev": "vuepress dev docs",
+    "deploy": "npm run build && gh-pages -d docs/.vuepress/dist -m \"docs: update documentation\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/antleblanc/playground#readme",
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "vuepress": "^1.2.0"
   }
 }
