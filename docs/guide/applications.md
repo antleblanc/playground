@@ -26,7 +26,7 @@ Pay attention that regarding the region, you should rely on a different API URL.
 
 ## Web
 
-![](/assets/img/control-panel-web.jpg)
+![](/playground/assets/img/control-panel-web.jpg)
 
 ### How to start the application?
 
@@ -44,7 +44,7 @@ $ yarn run build -p @ovh-ux/manager-web
 
 ## Server
 
-![](/assets/img/control-panel-server.jpg)
+![](/playground/assets/img/control-panel-server.jpg)
 
 ::: tip Information
 Both applications **Dedicated** and **Cloud** are grouped under the **Server**
@@ -70,7 +70,7 @@ $ yarn run build -p @ovh-ux/manager-dedicated # or @ovh-ux/manager-cloud
 
 ## Public Cloud
 
-![](/assets/img/control-panel-public-cloud.jpg)
+![](/playground/assets/img/control-panel-public-cloud.jpg)
 
 ::: tip Information
 Application can be started in different region with a given environment variable.
@@ -93,7 +93,7 @@ $ yarn run build -p @ovh-ux/manager-public-cloud
 
 ## Telecom
 
-![](/assets/img/control-panel-telecom.jpg)
+![](/playground/assets/img/control-panel-telecom.jpg)
 
 ### How to start the application?
 

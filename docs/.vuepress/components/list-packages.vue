@@ -57,7 +57,7 @@ export default {
   async mounted () {
     this.loading = true;
     try {
-      const packages = await fetch('/assets/json/packages.json');
+      const packages = await fetch('/playground/assets/json/packages.json');
       const pacakgesAsJson = await packages.json();
       const { packagesList } = pacakgesAsJson.find((pkg) => pkg.workspace === getWorkspace(this.type));
 
