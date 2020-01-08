@@ -9,7 +9,7 @@ Our [`package.json`](package.json) houses a collection of [run-scripts](https://
 
 ### Generate a module (or an Application).
 
-![](/assets/img/generate-module-app.gif)
+![](/playground/assets/img/generate-module-app.gif)
 
 ```sh
 # `foo` is the name of your module.
@@ -28,6 +28,6 @@ Now you are able to visit `http://localhost:9000/#!/foo` (route based on the mod
 $ yarn run split --help
 ```
 
-![](/assets/img/split-module-1.png)
+![](/playground/assets/img/split-module-1.png)
 
-![](/assets/img/split-module-2.png)
+![](/playground/assets/img/split-module-2.png)
