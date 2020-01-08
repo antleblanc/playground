@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/playground/',
   title: 'Manager',
   description: 'OVHcloud Control Panel Documentation',
   head: [
