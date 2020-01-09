@@ -114,4 +114,4 @@ $ yarn run build -p @ovh-ux/manager-telecom
 
 ## All applications
 
-<list-packages type="applications"/>
+<Packages type="applications"/>

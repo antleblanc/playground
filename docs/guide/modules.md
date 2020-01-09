@@ -18,4 +18,4 @@ All modules are located in `packages/manager/modules/*` workspace.
 
 ## All modules
 
-<list-packages type="modules"/>
+<Packages type="modules"/>

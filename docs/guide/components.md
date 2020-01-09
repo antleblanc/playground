@@ -15,4 +15,4 @@ It contains all our published packages on the [npm registry](https://docs.npmjs.
 
 ## All components
 
-<list-packages type="components"/>
+<Packages type="components"/>

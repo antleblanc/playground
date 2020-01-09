@@ -26,8 +26,7 @@ module.exports = {
             items: [
               {
                 text: 'Contribute',
-                link:
-                  'https://github.com/ovh/manager/blob/master/CONTRIBUTING.md',
+                link: '/contributing',
               },
             ],
           },

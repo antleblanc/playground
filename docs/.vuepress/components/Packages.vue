@@ -8,17 +8,21 @@
       Unable to get the packages list.
     </p>
 
-    <ul
-      v-if="success"
-      class="list-package">
+    <ul v-if="success">
       <li
         v-for="pkg in packages"
-        v-bind:key="pkg.package.ame"
-        class="list-package__item">
-        {{ pkg.package.name }}@{{ pkg.package.version }}<br>
+        v-bind:key="pkg.package.ame">
+        <a
+          v-bind:href="'https://github.com/ovh/manager/tree/master/' + pkg.package.repository.directory"
+          rel="noopener noreferrer"
+          target="_blank">
+          {{ pkg.package.name }}@{{ pkg.package.version }}
+        </a>
+        <br>
         <small>
           <strong>Description</strong>: {{ pkg.package.description ? pkg.package.description : 'n/a' }}
         </small>
+        <hr>
       </li>
     </ul>
   </div>
@@ -28,16 +32,16 @@
 const getWorkspace = (type) => {
   switch (type) {
     case 'components':
-      return 'packages/components/*'
+      return 'packages/components/*';
       break;
     case 'modules':
-      return 'packages/manager/modules/*'
+      return 'packages/manager/modules/*';
       break;
     case 'tools':
-      return 'packages/manager/tools/*'
+      return 'packages/manager/tools/*';
       break;
     default:
-      return 'packages/manager/apps/*'
+      return 'packages/manager/apps/*';
       break;
   }
 };
@@ -52,7 +56,7 @@ export default {
       success: false,
       rejected: false,
       packages: [],
-    }
+    };
   },
   async mounted () {
     this.loading = true;
@@ -63,7 +67,7 @@ export default {
 
       this.packages = packagesList;
       this.success = true;
-    } catch (e) {
+    } catch (error) {
       this.rejected = true;
     } finally {
       this.loading = false;
@@ -72,7 +76,10 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-.list-package__item
-  margin-bottom 1rem
+<style lang="stylus" scoped>
+  ul
+    padding-left inherit
+
+    li
+      list-style-type none
 </style>

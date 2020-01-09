@@ -20,4 +20,4 @@ TODO: Describe translation plugin.
 
 ## All tools
 
-<list-packages type="tools"/>
+<Packages type="tools"/>
