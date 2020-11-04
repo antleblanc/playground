@@ -1,16 +1,9 @@
 name: Documentation
 
-# on:
-#   release:
-#     types:
-#       - created
-
-# on:
-#   push:
-#     branches:
-#       - master
-
-on: push
+on:
+  release:
+    types:
+      - created
 
 jobs:
   publish:
