@@ -1,4 +1,4 @@
-name: Documentation
+name: GitHub Pages
 
 on:
   release:
