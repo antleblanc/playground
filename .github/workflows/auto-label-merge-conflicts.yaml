@@ -1,3 +1,5 @@
+name: Auto-label merge conflicts
+
 on: [push, pull_request]
 
 jobs:
